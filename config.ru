@@ -18,6 +18,4 @@ require 'compass'
 # our app file
 require './app'
 
-#run Sinatra::Application
-
 run App.new
