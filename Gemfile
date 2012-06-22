@@ -11,15 +11,15 @@ gem "sinatra-partial"
 gem "sinatra-flash"
 gem "eventmachine"
 gem "data_mapper"
-gem "dm-sqlite-adapter"
 gem "haml"
 gem "sass"
 gem "compass"
 
-# Heroku uses Postgres as the default database for production apps
-# so we are setting that for production and sqlite for dev.
+# DB stuff. Not used currently
+# If you are pushing to heroku you can't use sqlite.
 group :production do
-	gem "pg"
+	# gem "pg"
 end
 group :development, :test do
+	# some gem for local db related stuff
 end
