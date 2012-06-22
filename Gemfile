@@ -1,5 +1,7 @@
 # Gemfile
 
+source "http://rubygems.org"
+
 gem "thin"
 gem "yard"
 gem "sinatra"
