@@ -22,6 +22,4 @@ group :production do
 	gem "pg"
 end
 group :development, :test do
-	gem "sqlite3"
-	gem "do_sqlite3"
 end
