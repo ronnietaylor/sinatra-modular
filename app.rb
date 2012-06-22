@@ -8,9 +8,14 @@ configure do
 end
 
 class App < Sinatra::Application
+	register Sinatra::Async
 
 	get '/' do
 		haml :index
 	end
+
+	aget '/delay/:n' do |n|
+    EM.add_timer(n.to_i) { body { "delayed for #{n} seconds" } }
+  end
 
 end
